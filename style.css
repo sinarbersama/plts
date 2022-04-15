@@ -1,0 +1,160 @@
+body {
+  background-color: #E0E0E0
+  }
+  .mt-100 {
+  margin-top: 150px;
+  margin-left: 200px
+  }
+  .card-header {
+  background-color: #9575CD
+  }
+  h5 {
+  color: #fff
+  }
+  .card-block {
+  margin-top: 10px
+  }
+  .mytooltip {
+  display: inline;
+  position: relative;
+  z-index: 999
+  }
+  .mytooltip .tooltip-item {
+  background: rgba(123, 123, 123, 0.246);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  padding: 0 5px;
+  font-size: 10px;
+  }
+  .mytooltip .tooltip-content {
+  position: absolute;
+  z-index: 9999;
+  width: 360px;
+  left: 50%;
+  margin: 0 0 20px -180px;
+  bottom: 100%;
+  text-align: left;
+  font-size: 14px;
+  line-height: 30px;
+  -webkit-box-shadow: -5px -5px 15px rgba(53, 54, 55, 0.298);
+  box-shadow: -5px -5px 15px rgb(60, 58, 58);
+  background: rgb(251, 251, 251);
+  opacity: 0;
+  cursor: default;
+  pointer-events: none
+  }
+  .mytooltip .tooltip-content::after {
+  content: '';
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: #2a3035 transparent transparent;
+  border-width: 10px;
+  margin-left: -10px
+  }
+  .mytooltip .tooltip-content img {
+  position: relative;
+  height: 140px;
+  display: block;
+  float: left;
+  margin-right: 1em
+  }
+  .mytooltip .tooltip-item::after {
+  content: '';
+  position: absolute;
+  width: 360px;
+  height: 20px;
+  bottom: 100%;
+  left: 50%;
+  pointer-events: none;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+  }
+  .mytooltip:hover .tooltip-item::after {
+  pointer-events: auto
+  }
+  .mytooltip:hover .tooltip-content {
+  pointer-events: auto;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
+  transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg)
+  }
+  .mytooltip:hover .tooltip-content2 {
+  opacity: 1;
+  font-size: 18px
+  }
+  .mytooltip .tooltip-text {
+  font-size: 12px;
+  line-height: 24px;
+  display: block;
+  padding: 1.31em 1.21em 1.21em 1.31em;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  }
+  .mytooltip .image {
+    height: 1em;
+    width: auto;
+  }
+.img{
+    width:100%;
+    height: 400px;
+    
+}
+.muka{
+  width:50px ;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000000;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #a2a2a2;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

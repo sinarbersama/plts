@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Sinar Bersama : PLTS Terbaik di Indoneisa</title>
+</head>
+<body class="w3-light-grey">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">SINAR BERSAMA</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">BERANDA</a></li>  
+            <li><a href="#about">TENTANG KAMI</a></li>
+            <li><a href="product.html">PRODUK</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="contact.html">KONTAK</a></li>
+        </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div style="text-align:center">
+          <h2>Kontak Kami</h2>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="images/map.png" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">Nama</label>
+              <input type="text" id="name" name="fname" placeholder="Nama...">
+              <label for="lname">Email</label>
+              <input type="text" id="email" name="Email" placeholder="Email">
+              <label for="daerah">Daerah</label>
+              <select id="daerah" name="daerah">
+                <option value="jabodetabek">JABODETABEK</option>
+                <option value="jawa">JAWA BARAT, JAWA TENGAH, JAWA TIMUR</option>
+                <option value="luar">LUAR JAWA</option>
+              </select>
+              <label for="subject">Subjek</label>
+              <textarea id="subject" name="subject" placeholder="Tuliskan pesan.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
